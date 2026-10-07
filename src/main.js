@@ -1,4 +1,7 @@
 import './style.css'
+import profileImage from './assets/WhatsApp Image 2026-10-07 at 09.30.43.jpeg'
+
+document.querySelector('#profile-image').src = profileImage;
 
 // Initialize Lucide Icons
 lucide.createIcons();

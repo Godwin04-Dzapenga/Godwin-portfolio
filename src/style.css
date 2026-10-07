@@ -87,6 +87,29 @@ section {
   padding: var(--section-padding);
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-profile-image {
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 30%;
+  border: 1px solid rgba(var(--accent-rgb), 0.35);
+  border-radius: 28px;
+  box-shadow: 0 24px 70px rgba(0, 242, 255, 0.12);
+}
+
 /* Components */
 .glass-card {
   background: var(--glass-bg);
@@ -185,6 +208,15 @@ section {
   
   #about > div, #fintech > div > div {
     grid-template-columns: 1fr !important;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-profile-image {
+    max-width: 280px;
   }
   
   #projects > div {
